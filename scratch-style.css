@@ -1,0 +1,523 @@
+/* ===== CUSTOM STYLESHEET FOR SCRATCH PAGE ===== */
+/* Created by Savana Steel - Shopping Passion Page */
+
+/* ===== 1. GLOBAL BODY STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Custom background with floral-inspired gradient */
+  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 35%, #f9a8d4 65%, #f4719f 100%);
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+  color: #5a3e3e;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ===== 2. HEADER CONTAINER DIV - POSITIONING & STYLING ===== */
+.header-container {
+  background: linear-gradient(90deg, #ec4899, #f472b6);
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 8px dashed #be185d;
+  box-shadow: 0 8px 20px rgba(236, 72, 153, 0.3);
+  position: relative;
+}
+
+.page-header {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4em;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.8em;
+  color: #fef3c7;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.tagline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* ===== 3. NAVIGATION STYLING ===== */
+.top-nav {
+  background: rgba(250, 168, 212, 0.95);
+  padding: 15px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 10px rgba(236, 72, 153, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.back-link,
+.anchor-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: rgba(190, 24, 93, 0.3);
+}
+
+.back-link:hover,
+.anchor-link:hover {
+  background: #be185d;
+  transform: scale(1.1);
+  color: #fef3c7;
+}
+
+/* ===== 4. MAIN WRAPPER DIV - LAYOUT & POSITIONING ===== */
+.main-wrapper {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ===== 5. HERO SECTION ===== */
+.hero-section {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 12px 30px rgba(236, 72, 153, 0.2);
+  border: 3px solid #fbcfe8;
+}
+
+.hero-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  color: #be185d;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  color: #5a3e3e;
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(236, 72, 153, 0.25);
+  border: 4px solid #ec4899;
+  display: block;
+  margin: 20px auto;
+}
+
+/* ===== 6. SHOPPING CONTENT SECTION DIV ===== */
+.shopping-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.favorite-section,
+.fashion-guide {
+  background: rgba(255, 240, 245, 0.95);
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(236, 72, 153, 0.15);
+  border-left: 6px solid;
+}
+
+.favorite-section {
+  border-left-color: #ec4899;
+}
+
+.fashion-guide {
+  border-left-color: #f472b6;
+}
+
+.shopping-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8em;
+  color: #be185d;
+  margin-bottom: 20px;
+}
+
+.shopping-content p {
+  color: #5a3e3e;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+/* ===== 7. LIST STYLES ===== */
+.main-list {
+  list-style-type: decimal;
+  padding-left: 30px;
+  color: #6b2d5c;
+  font-weight: 600;
+}
+
+.main-list li {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: #5a3e3e;
+}
+
+.main-list strong {
+  color: #be185d;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+}
+
+/* Nested unordered list inside ordered list */
+.nested-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #6b2d5c;
+  font-weight: 400;
+}
+
+.nested-list li {
+  margin-bottom: 8px;
+  color: #5a3e3e;
+  font-size: 0.95em;
+}
+
+.philosophy-list {
+  list-style: none;
+  padding: 0;
+}
+
+.philosophy-list li {
+  padding: 12px 0;
+  padding-left: 30px;
+  position: relative;
+  color: #5a3e3e;
+  font-size: 1.05em;
+  line-height: 1.7;
+}
+
+.philosophy-list li:before {
+  content: "💕";
+  position: absolute;
+  left: 0;
+  color: #ec4899;
+}
+
+/* ===== 8. ACCENT COLOR STYLES ===== */
+.accent-pink {
+  color: #ec4899;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+.accent-rose {
+  color: #f472b6;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+.accent-fuchsia {
+  color: #e11d48;
+  font-weight: 700;
+  font-family: 'Dancing Script', cursive;
+}
+
+.accent-magenta {
+  color: #be185d;
+  font-weight: 700;
+  font-family: 'Dancing Script', cursive;
+}
+
+.accent-salmon {
+  color: #f97316;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== 9. SHOPPING TIPS CONTAINER DIV ===== */
+.shopping-tips-container {
+  background: linear-gradient(135deg, rgba(252, 231, 243, 0.9), rgba(251, 207, 232, 0.9));
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  border: 2px dashed #f472b6;
+  box-shadow: 0 10px 25px rgba(236, 72, 153, 0.2);
+}
+
+.shopping-tips h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2em;
+  color: #be185d;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.shopping-tips > p {
+  text-align: center;
+  color: #5a3e3e;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* ===== 10. TIPS GRID LAYOUT ===== */
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.tip-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(236, 72, 153, 0.15);
+  border-top: 4px solid;
+  transition: all 0.3s ease;
+}
+
+.tip-card:nth-child(1) { border-top-color: #ec4899; }
+.tip-card:nth-child(2) { border-top-color: #f472b6; }
+.tip-card:nth-child(3) { border-top-color: #fbcfe8; }
+.tip-card:nth-child(4) { border-top-color: #be185d; }
+.tip-card:nth-child(5) { border-top-color: #f97316; }
+.tip-card:nth-child(6) { border-top-color: #6b2d5c; }
+
+.tip-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(236, 72, 153, 0.25);
+}
+
+.tip-card h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4em;
+  color: #be185d;
+  margin-bottom: 12px;
+}
+
+.tip-card p {
+  color: #5a3e3e;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+/* ===== 11. TABLEAU SECTION ===== */
+.tableau-section {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(236, 72, 153, 0.2);
+  border: 3px solid #fbcfe8;
+}
+
+.tableau-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  color: #be185d;
+  margin-bottom: 15px;
+}
+
+.tableau-section > p {
+  color: #5a3e3e;
+  font-size: 1em;
+  margin-bottom: 25px;
+}
+
+.tableau-container {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(236, 72, 153, 0.2);
+}
+
+.tableauPlaceholder {
+  width: 100%;
+  height: 500px;
+}
+
+/* ===== 12. VIDEO SECTION ===== */
+.video-section {
+  background: rgba(255, 240, 245, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  text-align: center;
+  border: 3px solid #ec4899;
+  box-shadow: 0 8px 20px rgba(236, 72, 153, 0.2);
+}
+
+.video-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  color: #be185d;
+  margin-bottom: 15px;
+}
+
+.video-section > p {
+  color: #5a3e3e;
+  font-size: 1.05em;
+  margin-bottom: 25px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(236, 72, 153, 0.25);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
+/* ===== 13. CALL TO ACTION ===== */
+.call-to-action {
+  background: linear-gradient(135deg, #ec4899, #f472b6);
+  padding: 50px 40px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 12px 30px rgba(236, 72, 153, 0.3);
+}
+
+.call-to-action h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5em;
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action p {
+  color: white;
+  font-size: 1.1em;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 18px 40px;
+  background: white;
+  color: #be185d;
+  text-decoration: none;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button:hover {
+  transform: scale(1.08);
+  background: #fef3c7;
+  color: #6b2d5c;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== 14. FOOTER STYLING ===== */
+.footer {
+  background: linear-gradient(90deg, #be185d, #ec4899);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 4px dashed #fef3c7;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.footer a {
+  color: #fef3c7;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ===== 15. RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2.5em;
+  }
+
+  .subtitle {
+    font-size: 1.3em;
+  }
+
+  .shopping-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8em;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shopping-tips-container {
+    padding: 25px;
+  }
+
+  .call-to-action {
+    padding: 30px 20px;
+  }
+
+  .call-to-action h2 {
+    font-size: 1.8em;
+  }
+
+  .video-section,
+  .tableau-section {
+    padding: 25px;
+  }
+}

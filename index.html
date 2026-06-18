@@ -3,73 +3,310 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Savana Steel</title>
+  <title>Savana Steel - Shopping & Fashion</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
   <style>
-    ..hero { background: linear-gradient(135deg, #f9c6d0, #fde8ec); color: #5a3e3e; padding: 80px 0; }
-.hero h1, .hero p { color: #c2617a; }
-.section-title { border-bottom: 2px solid #f4a7b9; padding-bottom: 10px; margin-bottom: 20px; color: #c2617a; }
-.navbar { background-color: #f4a7b9 !important; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 50%, #f9a8d4 100%);
+      color: #5a3e3e;
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(90deg, #ec4899, #db2777) !important;
+      box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
+      padding: 1.5rem;
+    }
+
+    .navbar-brand {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2em;
+      color: white !important;
+      font-weight: 700;
+    }
+
+    .nav-link {
+      color: white !important;
+      font-weight: 600;
+      margin-left: 20px;
+      transition: all 0.3s ease;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .nav-link:hover {
+      color: #fef3c7 !important;
+      transform: scale(1.05);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #fce7f3, #fbcfe8);
+      padding: 100px 0;
+      text-align: center;
+      border-bottom: 4px dashed #db2777;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      color: #be185d;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    }
+
+    .hero .tagline {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.8em;
+      color: #ec4899;
+      margin-bottom: 20px;
+    }
+
+    .hero .subtitle {
+      font-size: 1.1em;
+      color: #6b2d5c;
+      font-weight: 600;
+    }
+
+    /* Main Content */
+    .container {
+      max-width: 1000px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      color: #be185d;
+      border-bottom: 3px solid #ec4899;
+      padding-bottom: 15px;
+      margin-top: 40px;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+    }
+
+    .resume-section {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      border-left: 5px solid #ec4899;
+      box-shadow: 0 8px 20px rgba(236, 72, 153, 0.15);
+      backdrop-filter: blur(10px);
+    }
+
+    .resume-section h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: #db2777;
+      margin-top: 20px;
+      margin-bottom: 12px;
+      font-size: 1.3em;
+    }
+
+    .resume-section h3:first-child {
+      margin-top: 0;
+    }
+
+    .job-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: #be185d;
+      font-size: 1.1em;
+    }
+
+    .company {
+      color: #ec4899;
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+
+    .resume-section ul {
+      margin-left: 20px;
+      color: #5a3e3e;
+    }
+
+    .resume-section li {
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+
+    .fancy-accent {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.2em;
+      color: #ec4899;
+    }
+
+    /* Quick Links */
+    .quick-links {
+      background: linear-gradient(135deg, #fbcfe8, #f9a8d4);
+      padding: 25px;
+      border-radius: 15px;
+      margin: 30px 0;
+      border: 2px dashed #ec4899;
+    }
+
+    .quick-links h4 {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.5em;
+      color: #be185d;
+      margin-bottom: 20px;
+    }
+
+    .quick-links a {
+      display: block;
+      padding: 12px 0;
+      color: #be185d;
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid rgba(190, 24, 93, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .quick-links a:hover {
+      color: #ec4899;
+      padding-left: 10px;
+      transform: translateX(5px);
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(90deg, #ec4899, #db2777);
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5em;
+      }
+
+      .hero .tagline {
+        font-size: 1.3em;
+      }
+
+      .section-title {
+        font-size: 1.5em;
+      }
+    }
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg ">
+<nav class="navbar navbar-expand-lg navbar-light">
   <div class="container">
-    <a class="navbar-brand" href="index.html">Savana Steel</a>
-    <div class="collapse navbar-collapse">
+    <a class="navbar-brand" href="index.html">✨ Savana Steel ✨</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="scratch.html">My Passion</a></li>
+        <li class="nav-item"><a class="nav-link" href="scratch.html">My Shopping Passion</a></li>
+        <li class="nav-item"><a class="nav-link" href="webapp.html">Shopping Game</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<section class="hero text-center">
+<section class="hero">
   <div class="container">
-    <h1 class="display-4">Savana Steel</h1>
-    <p class="lead">Business Student | Photographer | Entrepreneur</p>
+    <h1>Savana Steel</h1>
+    <p class="tagline">Fashion Enthusiast & Business Professional</p>
+    <p class="subtitle">Sophomore at BYU | EXDM Business Program Applicant</p>
   </div>
 </section>
 
 <div class="container my-5">
-  <div class="row">
-    <div class="col-md-8">
-
-      <h2 class="section-title">Education</h2>
-      <p><strong>Brigham Young University</strong> — Business Management<br>
-      Expected Graduation: 2026</p>
-
-      <h2 class="section-title">Work Experience</h2>
-      <p><strong>Engagement Photographer</strong> — Self-Employed, Utah<br>
-      Photographing couples and families across Utah with a moody, editorial style.</p>
-      <p><strong>JJ & S Enterprises LLC</strong> — Partner/Reseller<br>
-      HP Business Rewards Partner program reseller managing invoicing and submissions.</p>
-
-      <h2 class="section-title">Skills</h2>
-      <ul>
-        <li>Data Analytics (Tableau, Excel, SQL)</li>
-        <li>Web Development (HTML, CSS, JavaScript)</li>
-        <li>Photography & Photo Editing</li>
-        <li>Business Operations & Reselling</li>
-      </ul>
-
-    </div>
-    <div class="col-md-4">
-      <div class="card p-3 bg-light">
-        <h5>Quick Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="scratch.html">My Shopping Passion Page</a></li>
-          <li><a href="webapp.html">Shopping Web App</a></li>
-        </ul>
-      </div>
-    </div>
+  <div class="resume-section">
+    <h3>👗 About Me</h3>
+    <p>Hello! I'm Savana, a passionate business student with a love for fashion, bridal experiences, and technology sales. My career journey combines my enthusiasm for helping people find the perfect outfit with strategic business development. Whether I'm helping a bride find her dream dress or closing IT deals, I bring creativity and professionalism to every role.</p>
   </div>
+
+  <h2 class="section-title">📚 Education</h2>
+  <div class="resume-section">
+    <h3>Brigham Young University</h3>
+    <p><strong>Current Status:</strong> Sophomore</p>
+    <p><strong>Major:</strong> Business Management</p>
+    <p><strong>Program Application:</strong> EXDM (Entrepreneurship, Design & Management)</p>
+    <p><strong>Expected Graduation:</strong> 2028</p>
+  </div>
+
+  <h2 class="section-title">💼 Work Experience</h2>
+  
+  <div class="resume-section">
+    <h3><span class="job-title">Bridal Consultant</span></h3>
+    <p class="company">Pritchett Bridal</p>
+    <p><strong>Role:</strong> Help clients experience the magic of wedding dress shopping</p>
+    <ul>
+      <li>Assist brides in selecting the perfect wedding dress through personalized consultations</li>
+      <li>Provide expert styling advice and create memorable shopping experiences</li>
+      <li>Build lasting relationships with clients during one of their most important life events</li>
+      <li>Stay current with bridal fashion trends and designer collections</li>
+    </ul>
+  </div>
+
+  <div class="resume-section">
+    <h3><span class="job-title">Inside Sales Representative</span></h3>
+    <p class="company">SSA Technology</p>
+    <p><strong>Focus:</strong> IT Solutions & Business Development</p>
+    <ul>
+      <li>Generate and qualify leads for technology solutions</li>
+      <li>Build relationships with prospective clients through consultative sales approach</li>
+      <li>Achieve sales targets while maintaining high customer satisfaction</li>
+      <li>Utilize CRM systems and sales analytics to drive business growth</li>
+      <li>Develop communication and negotiation skills in a fast-paced environment</li>
+    </ul>
+  </div>
+
+  <h2 class="section-title">⭐ Skills & Expertise</h2>
+  <div class="resume-section">
+    <h3>Professional Skills</h3>
+    <ul>
+      <li><strong>Sales & Customer Service:</strong> Bridal consulting, inside sales, client relationship management</li>
+      <li><strong>Technology:</strong> CRM systems, sales analytics, IT business solutions</li>
+      <li><strong>Web Development:</strong> HTML, CSS, JavaScript, Bootstrap, Responsive Design</li>
+      <li><strong>Data Analytics:</strong> Tableau, Excel, data visualization</li>
+      <li><strong>Business:</strong> Project management, market analysis, strategic planning</li>
+      <li><strong>Creative:</strong> Fashion sense, styling, event coordination</li>
+    </ul>
+  </div>
+
+  <h2 class="section-title">💕 Passion & Interests</h2>
+  <div class="resume-section">
+    <p><span class="fancy-accent">Shopping is my love language!</span> I'm obsessed with:</p>
+    <ul>
+      <li>Finding the perfect outfit for every occasion</li>
+      <li>Exploring fashion brands like Love Shack Fancy</li>
+      <li>Creating beautiful style combinations</li>
+      <li>Helping others discover their personal style</li>
+      <li>Staying on top of fashion trends</li>
+    </ul>
+  </div>
+
+  <div class="quick-links">
+    <h4>🛍️ Explore My World</h4>
+    <a href="scratch.html">→ My Shopping Passion Page</a>
+    <a href="scratch.html#shopping-tips">→ View the Shopping Dashboard</a>
+    <a href="webapp.html">→ Play the Shopping Game</a>
+  </div>
+
 </div>
 
-<footer class="bg-dark text-white text-center py-3">
-  <p class="mb-0">&copy; 2026 Savana Steel</p>
+<footer>
+  <p class="mb-0">✨ © 2026 Savana Steel | Fashion × Business × Technology ✨</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
